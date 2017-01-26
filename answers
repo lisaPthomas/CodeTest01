@@ -1,0 +1,57 @@
+Provide answers to the following AngularJS questions. Submit the questions and your answers on a simple HTML page. 
+
+1. How do you define an AngularJS application?
+-You define an AngularJS application by creating a module.
+	var app= angular.module("myApp", [])
+-Then you add ng-app="myApp" to the html tag you want to bind it to.
+
+
+2. What is a controller? 
+-Controllers control the data of AngularJS applications
+-They are regular JavaScript Objects
+-They contain most of the logic for manipulating the UI
+
+3. What does ng-model do?
+-It is a directive that binds the value of HTML controls(input, select, textarea) to application data.
+
+ 4. What is interpolation markup? 
+ -Interpolation is a way to get data displayed in the view
+ -Most common use is to display some data from a property that is set in the component class
+
+
+ 5. What is $scope? 
+-Scope is the part of the application that allows you to manipulate data and make changes to the user interface. It is the bindng part between HTML(view) and JavaScript(controller).
+-Every controller, directive, and view can have its own scope.
+
+ 6. What is dependency injection? 
+ - When I create multiple files and connect them to the DOM and the files start to depend on one another to perform events on the view, this is dependency injection. When I have a factory and it sends a task to the controller, the controller is dependent on the factory in order for the functions to work.
+
+ 7. What is two-way binding? 
+ -Two way binding can both change and display the value of the variable
+ -An example in angular is when the ng-model directive changes the model and the view in a synchronized way. When the model changes the view changes automatically.
+
+ 8. What is 'controller as' syntax? 
+ -The controller as syntax gives controller an alias that acts like the scope which binds the dependencies.
+ -For example: By using 'controller as vm', we are binding everything controlled by the controller with vm. This allows for better organization while using angular.
+
+ 9. What is MV* architecture? 
+-MV* is Model View Whatever
+	-This is taken from the idea that you can use whatever framework you would prefer to use because MVC, MVP, and MVVW although different, are structured in similar patterns.
+	-Each architecture 
+
+
+ Model
+ 	-the model represents the data/information the page deals with. Examples:phone numbers, names, etc
+ 	-does not hold the behaviors or services that manipulate the data/info
+ 	-services/domain model
+
+ View
+ 	-What the user sees and can interact with. Presentation of data.
+ MVVM- The view is active, has a knowledge of model. The view in this model contains behaviors, events, and data bindings because it has knowledge of the model and viewmodel. 
+
+
+
+ MVC stands for Model View Controller. It work as follows: the model updates the view that the user sees. The user then can use the view to interact with controller functions. Then the controller manipulates the model.
+
+ 10. What is the difference between a service and a factory?
+ Factories are functions that return the object, while services are constructor functions of the objectwhich are instantiated with the new keyword.
